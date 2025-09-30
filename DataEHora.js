@@ -1,0 +1,24 @@
+var then = new Date(2011, 0, 1); // 1 Jan 2011
+console.log(then.getTime()); //=> 1293840000000: milissegundos desde 1 Jan 1970
+console.log(then.getFullYear()); //=> 2011: ano com 4 dígitos
+console.log(then.getMonth()); //=> 0: mês de 0 (Janeiro) a 11 (Dezembro)
+console.log(then.getDate());
+console.log(then.getDay()); //=> 6: dia da semana de 0 (Domingo) a 6 (Sábado)
+console.log(then.getHours()); //=> 0: hora de 0 a 23
+console.log(then.getMinutes()); //=> 0: minutos de 0 a 59
+console.log(then.getSeconds()); //=> 0: segundos de 0 a 59
+console.log(then.getMilliseconds()); //=> 0: milissegundos de 0 a 999
+console.log(then.toString()); //=> Sat Jan 01 2011 00:00:00 GMT-0200 (BRST)
+console.log(then.toUTCString()); //=> Sat, 01 Jan 2011 03:00:00 GMT
+console.log(then.toISOString()); //=> 2011-01-01T03:00:00.000Z
+console.log(then.toDateString()); //=> Sat Jan 01 2011
+console.log(then.toTimeString()); //=> 00:00:00 GMT-0200 (BRST)
+console.log(then.toLocaleDateString()); //=> 01/01/2011
+console.log(then.toLocaleTimeString()); //=> 00:00:00
+console.log(then.toLocaleString()); //=> 01/01/2011 00:00:00
+var later = new Date(2011, 0, 1, 17, 10, 30); // 1 Jan 2011 17:10:30
+console.log(later.toString()); //=> Sat Jan 01 2011 17:10:30 GMT-0200 (BRST)
+var now = new Date(); // Data e hora atuais
+console.log(now.toString()); //=> ex: Mon May 02 2016 16:19:20 GMT-0300 (BRT)
+var elapsed = now - then; // Diferença em milissegundos
+console.log(elapsed); //=> ex: 1619987620344
