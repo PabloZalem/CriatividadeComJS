@@ -24,3 +24,9 @@ var ex2 = "one\
             long\
             line"; // string de uma linha longa
 console.log(ex2); // => one long line
+
+// Trabalhando com Strings
+msg = "Hello, " + "world" + "!"; // concatenação com o operador +
+greeting = "Welcome to " + msg;
+console.log(greeting); // => Welcome to Hello, world!
+console.log(greeting.length); // => 26
